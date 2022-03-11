@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Create a Login component that has two text inputs, one for a username and one for a password, and a button to login the user. When the login button is clicked, an alert should be showed to the user that displays what the user typed in for the username and password.
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from "react"
+import "./App.css"
+import Login from "./Login"
+
+export default class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Login />
+            </div>
+        )
+    }
 }
-
-export default App;
